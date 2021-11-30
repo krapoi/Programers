@@ -9,11 +9,12 @@ public class MinMaxCommonMultiple {
         return answer;
     }
 
+    //최대공약수
     public static int Multiple(int num1, int num2){
         if(num2 == 0) return num1;
         else return Multiple(num2,num1 % num2);
     }
-
+    //최소공배수
     public int Min(int n1, int n2){
         return n1 * n2 / Multiple(n1,n2);
     }
